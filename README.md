@@ -8,3 +8,7 @@
 | ------------------------------ | ------------------------------------------- | ----------------------------------- |
 | コミットテンプレートを登録する | `git config commit.template .commitmessage` |                                     |
 | Node のバージョンを合わせる    | `nvm use`                                   | 初回は`nvm install`とする必要がある |
+
+## デザイン
+
+https://www.figma.com/file/cmsLJMhbC8p6PpsIRLDoCw6y/FrontendAdventureGuide
