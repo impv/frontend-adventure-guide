@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.pug --port 8080",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,33 @@
     "url": "https://github.com/impv/frontend-adventure-guide/issues"
   },
   "homepage": "https://github.com/impv/frontend-adventure-guide#readme",
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "styled-components": "^3.2.5"
+  },
   "devDependencies": {
+    "@types/react": "^16.3.5",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-redux": "^5.0.15",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.3",
     "parcel-bundler": "^1.7.0",
-    "pug": "^2.0.3"
+    "prettier": "1.11.1",
+    "pug": "^2.0.3",
+    "typescript": "^2.8.1"
+  },
+  "browserlist": "last 2 versions",
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
