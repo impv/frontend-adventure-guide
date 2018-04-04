@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/impv/frontend-adventure-guide/issues"
   },
-  "homepage": "https://github.com/impv/frontend-adventure-guide#readme"
+  "homepage": "https://github.com/impv/frontend-adventure-guide#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.7.0"
+  }
 }
