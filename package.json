@@ -4,7 +4,9 @@
   "description": "タイプ別フロントエンドエンジニアになりたい人向け診断アプリ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.pug --port 8080",
+    "build": "parcel build src/index.pug"
   },
   "repository": {
     "type": "git",
