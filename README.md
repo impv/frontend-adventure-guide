@@ -1,5 +1,7 @@
 # フロントエンド冒険の手引
 
+[![Build Status](https://travis-ci.org/impv/frontend-adventure-guide.svg?branch=master)](https://travis-ci.org/impv/frontend-adventure-guide)
+
 タイプ別フロントエンドエンジニアになりたい人向け診断アプリ
 
 ## コマンド一覧
