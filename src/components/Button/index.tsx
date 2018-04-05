@@ -6,31 +6,14 @@ const baseColor = '#F8BA69'
 const primaryColor = '#03D1AB'
 const secondaryColor = '#4E1C81'
 
-type Type = 'primary' | 'outline' | 'normal'
+type ButtonType = 'primary' | 'outline' | 'default'
 
 interface Props {
-  type?: Type
+  type?: ButtonType
   block?: boolean
 }
 
-const ButtonTypes = (p: Props) =>
-  p.type === 'primary'
-    ? `
-  background-color: ${primaryColor};
-  color: #fff;
-`
-    : p.type === 'outline'
-      ? `
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff;
-`
-      : `
-  background-color: #fff;
-  color: ${primaryColor}
-`
-
-const Button = styled.button`
+const ButtonBase = styled.button`
   display: ${(p: Props) => (p.block ? 'block' : 'inline-block')};
   padding: 1em 0;
   width: ${(p: Props) => (p.block ? '100%' : '20em')};
@@ -48,8 +31,41 @@ const Button = styled.button`
   &:focus {
     outline: none;
   }
-
-  ${ButtonTypes};
 `
+
+const PrimaryButton = ButtonBase.extend`
+  background-color: ${primaryColor};
+  color: #fff;
+`
+
+const OutlineButton = ButtonBase.extend`
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+`
+
+const DefaultButton = ButtonBase.extend`
+  background-color: #fff;
+  color: ${primaryColor};
+`
+
+const Button: React.StatelessComponent<Props> = ({
+  block = false,
+  type = 'default',
+  children
+}) => {
+  const Btn = (() => {
+    switch (type) {
+      case 'primary':
+        return PrimaryButton
+      case 'outline':
+        return OutlineButton
+      default:
+        return DefaultButton
+    }
+  })()
+
+  return <Btn block={block}>{children}</Btn>
+}
 
 export default Button
