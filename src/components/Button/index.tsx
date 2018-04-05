@@ -40,7 +40,11 @@ const DefaultButton = ButtonBase.extend`
 /**
  * 基本的なボタン
  */
-export const Button: React.SFC<Props> = ({ block, type, children }) => {
+export const Button: React.SFC<Props> = ({
+  block = false,
+  type = 'default',
+  children
+}) => {
   const Btn = (() => {
     switch (type) {
       case 'primary':
@@ -53,11 +57,6 @@ export const Button: React.SFC<Props> = ({ block, type, children }) => {
   })()
 
   return <Btn block={block}>{children}</Btn>
-}
-
-Button.defaultProps = {
-  type: 'default',
-  block: false
 }
 
 export default Button

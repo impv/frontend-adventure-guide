@@ -8,6 +8,7 @@
     "dev": "parcel src/index.pug --port 8080",
     "build": "parcel build src/index.pug",
     "styleguide": "styleguidist server --config config/styleguidist/config.js",
+    "lint": "tslint --project .",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -39,6 +40,8 @@
     "pug": "^2.0.3",
     "react-docgen-typescript": "^1.2.6",
     "react-styleguidist": "^7.0.4",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
     "typescript": "^2.8.1",
     "webpack": "^3.11.0",
     "webpack-blocks": "^1.0.0"
