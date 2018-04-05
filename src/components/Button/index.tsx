@@ -2,36 +2,24 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
+import ButtonBase from './ButtonBase'
+
 const baseColor = '#F8BA69'
 const primaryColor = '#03D1AB'
 const secondaryColor = '#4E1C81'
 
-type ButtonType = 'primary' | 'outline' | 'default'
-
 interface Props {
-  type?: ButtonType
+  /**
+   * ボタンの種類
+   * @default default
+   */
+  type?: 'primary' | 'outline' | 'default'
+  /**
+   * ブロックレベルで表示するかどうか
+   * @default false
+   */
   block?: boolean
 }
-
-const ButtonBase = styled.button`
-  display: ${(p: Props) => (p.block ? 'block' : 'inline-block')};
-  padding: 1em 0;
-  width: ${(p: Props) => (p.block ? '100%' : '20em')};
-
-  border: 1px solid transparent;
-  border-radius: 5px;
-
-  outline: none;
-  cursor: pointer;
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
-
-  &:focus {
-    outline: none;
-  }
-`
 
 const PrimaryButton = ButtonBase.extend`
   background-color: ${primaryColor};
@@ -49,11 +37,10 @@ const DefaultButton = ButtonBase.extend`
   color: ${primaryColor};
 `
 
-const Button: React.StatelessComponent<Props> = ({
-  block = false,
-  type = 'default',
-  children
-}) => {
+/**
+ * 基本的なボタン
+ */
+export const Button: React.SFC<Props> = ({ block, type, children }) => {
   const Btn = (() => {
     switch (type) {
       case 'primary':
@@ -66,6 +53,11 @@ const Button: React.StatelessComponent<Props> = ({
   })()
 
   return <Btn block={block}>{children}</Btn>
+}
+
+Button.defaultProps = {
+  type: 'default',
+  block: false
 }
 
 export default Button
