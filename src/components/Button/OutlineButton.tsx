@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import styled from 'styled-components'
 import { darken } from 'polished'
+import styled from 'styled-components'
 
 import ButtonBase from './ButtonBase'
 

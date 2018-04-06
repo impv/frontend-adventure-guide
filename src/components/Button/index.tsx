@@ -1,13 +1,13 @@
 import * as React from 'react'
 
+import { darken, lighten } from 'polished'
 import styled from 'styled-components'
-import { lighten, darken } from 'polished'
 
 import ButtonBase from './ButtonBase'
-import PrimaryButton from './PrimaryButton'
-import OutlineButton from './OutlineButton'
 import DefaultButton from './DefaultButton'
 import DisabledButton from './DisabledButton'
+import OutlineButton from './OutlineButton'
+import PrimaryButton from './PrimaryButton'
 
 interface Props {
   /**
