@@ -14,6 +14,9 @@ module.exports = {
     babel(),
     resolve({ alias: { '~': path.resolve(__dirname, '../../src/') } })
   ]),
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, 'ThemeWrapper')
+  },
   styles: {
     Playground: {
       preview: {

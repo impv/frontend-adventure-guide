@@ -1,12 +1,13 @@
 import * as React from 'react'
 
+import { darken, lighten } from 'polished'
 import styled from 'styled-components'
 
 import ButtonBase from './ButtonBase'
-
-const baseColor = '#F8BA69'
-const primaryColor = '#03D1AB'
-const secondaryColor = '#4E1C81'
+import DefaultButton from './DefaultButton'
+import DisabledButton from './DisabledButton'
+import OutlineButton from './OutlineButton'
+import PrimaryButton from './PrimaryButton'
 
 interface Props {
   /**
@@ -19,33 +20,32 @@ interface Props {
    * @default false
    */
   block?: boolean
+  /**
+   * ボタンが有効かどうか
+   * @default false
+   */
+  disabled?: boolean
+  /**
+   * クリックハンドラ
+   */
+  onClick?: () => any
 }
-
-const PrimaryButton = ButtonBase.extend`
-  background-color: ${primaryColor};
-  color: #fff;
-`
-
-const OutlineButton = ButtonBase.extend`
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff;
-`
-
-const DefaultButton = ButtonBase.extend`
-  background-color: #fff;
-  color: ${primaryColor};
-`
 
 /**
  * 基本的なボタン
  */
 export const Button: React.SFC<Props> = ({
   block = false,
+  disabled = false,
   type = 'default',
+  onClick,
   children
 }) => {
   const Btn = (() => {
+    if (disabled) {
+      return DisabledButton
+    }
+
     switch (type) {
       case 'primary':
         return PrimaryButton
@@ -56,7 +56,11 @@ export const Button: React.SFC<Props> = ({
     }
   })()
 
-  return <Btn block={block}>{children}</Btn>
+  return (
+    <Btn onClick={onClick} block={block} disabled={disabled}>
+      {children}
+    </Btn>
+  )
 }
 
 export default Button
