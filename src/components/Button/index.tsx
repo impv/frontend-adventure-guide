@@ -19,6 +19,10 @@ interface Props {
    * @default false
    */
   block?: boolean
+  /**
+   * クリックハンドラ
+   */
+  onClick?: () => any
 }
 
 const PrimaryButton = ButtonBase.extend`
@@ -43,6 +47,7 @@ const DefaultButton = ButtonBase.extend`
 export const Button: React.SFC<Props> = ({
   block = false,
   type = 'default',
+  onClick,
   children
 }) => {
   const Btn = (() => {
@@ -56,7 +61,11 @@ export const Button: React.SFC<Props> = ({
     }
   })()
 
-  return <Btn block={block}>{children}</Btn>
+  return (
+    <Btn onClick={onClick} block={block}>
+      {children}
+    </Btn>
+  )
 }
 
 export default Button
