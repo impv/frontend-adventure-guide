@@ -1,10 +1,18 @@
-### 種類
+### バリエーション
 
 ```js
-<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignContent: 'space-between',
+    flexWrap: 'wrap'
+  }}
+>
   <Button>Click Me!</Button>
   <Button type="primary">Click Me!</Button>
   <Button type="outline">Click Me!</Button>
+  <Button disabled>Click me if you can</Button>
 </div>
 ```
 
