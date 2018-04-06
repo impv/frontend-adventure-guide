@@ -7,6 +7,7 @@ module.exports = {
   ignore: ['**/components/App/**/*'],
   showCode: true,
   showUsage: true,
+  styleguideDir: path.resolve(__dirname, '../../styleguide'),
   propsParser: require('react-docgen-typescript').parse,
   webpackConfig: createConfig([
     typescript(),
