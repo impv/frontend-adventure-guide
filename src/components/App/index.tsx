@@ -1,8 +1,12 @@
 import * as React from 'react'
 
-import styled from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import Button from '~/components/Button'
+
+import { theme, Themed } from '~/styles/theme'
+
+type ContainerProps = Themed
 
 const Container = styled.div`
   position: absolute;
@@ -11,7 +15,7 @@ const Container = styled.div`
   bottom: 0;
   left: 0;
 
-  background-color: #f8ba69;
+  background-color: ${(props: ContainerProps) => props.theme.baseColor}
 
   overflow: auto;
 `
@@ -24,18 +28,20 @@ const Buttons = styled.div`
 `
 
 const App: React.StatelessComponent = () => (
-  <Container>
-    <Buttons>
-      <Button>Hello, World!</Button>
-      <Button type="outline">Hello, World!</Button>
-      <Button type="primary">Hello, World!</Button>
-    </Buttons>
-    <Buttons>
-      <Button type="outline" block>
-        Hello, World!
-      </Button>
-    </Buttons>
-  </Container>
+  <ThemeProvider theme={theme}>
+    <Container>
+      <Buttons>
+        <Button>Hello, World!</Button>
+        <Button type="outline">Hello, World!</Button>
+        <Button type="primary">Hello, World!</Button>
+      </Buttons>
+      <Buttons>
+        <Button type="outline" block>
+          Hello, World!
+        </Button>
+      </Buttons>
+    </Container>
+  </ThemeProvider>
 )
 
 export default App

@@ -3,24 +3,25 @@ import * as React from 'react'
 import { darken, lighten } from 'polished'
 import styled from 'styled-components'
 
+import { Themed } from '~/styles/theme'
+
 import ButtonBase from './ButtonBase'
 
-const baseColor = '#F8BA69'
-const primaryColor = '#03D1AB'
-const secondaryColor = '#4E1C81'
+type Props = Themed
 
 const PrimaryButton = ButtonBase.extend`
   // appearance
-  background-color: ${primaryColor};
+  background-color: ${({ theme }: Props) => theme.primaryColor};
   color: #fff;
 
   // pseudo
   &:hover {
-    background-color: ${lighten(0.03, primaryColor)};
+    background-color: ${({ theme }: Props) =>
+      lighten(0.03, theme.primaryColor)};
   }
 
   &:active {
-    background-color: ${darken(0.02, primaryColor)};
+    background-color: ${({ theme }: Props) => darken(0.02, theme.primaryColor)};
   }
 `
 

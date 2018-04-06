@@ -3,11 +3,11 @@ import * as React from 'react'
 import { darken } from 'polished'
 import styled from 'styled-components'
 
+import { Themed } from '~/styles/theme'
+
 import ButtonBase from './ButtonBase'
 
-const baseColor = '#F8BA69'
-const primaryColor = '#03D1AB'
-const secondaryColor = '#4E1C81'
+type Props = Themed
 
 const OutlineButton = ButtonBase.extend`
   // appearance
@@ -21,13 +21,13 @@ const OutlineButton = ButtonBase.extend`
 
   // pseudo
   &:hover {
-    color: ${primaryColor};
-    border-color: ${primaryColor};
+    color: ${({ theme }: Props) => theme.primaryColor};
+    border-color: ${({ theme }: Props) => theme.primaryColor};
   }
 
   &:active {
-    color: ${darken(0.05, primaryColor)};
-    border-color: ${darken(0.1, primaryColor)};
+    color: ${({ theme }: Props) => darken(0.05, theme.primaryColor)};
+    border-color: ${({ theme }: Props) => darken(0.1, theme.primaryColor)};
   }
 `
 

@@ -3,16 +3,16 @@ import * as React from 'react'
 import { darken } from 'polished'
 import styled from 'styled-components'
 
+import { Themed } from '~/styles/theme'
+
 import ButtonBase from './ButtonBase'
 
-const baseColor = '#F8BA69'
-const primaryColor = '#03D1AB'
-const secondaryColor = '#4E1C81'
+type Props = Themed
 
 const DefaultButton = ButtonBase.extend`
   // appearance
   background-color: #fff;
-  color: ${primaryColor};
+  color: ${({ theme }: Props) => theme.primaryColor};
 
   // pseudo
   &:hover {
