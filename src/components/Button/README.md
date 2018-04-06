@@ -5,8 +5,9 @@
   style={{
     display: 'flex',
     justifyContent: 'space-between',
-    alignContent: 'space-between',
-    flexWrap: 'wrap'
+    alignContent: 'space-around',
+    flexWrap: 'wrap',
+    minHeight: '8em'
   }}
 >
   <Button>Click Me!</Button>
@@ -35,7 +36,15 @@
 ### ハンドラ
 
 ```js
-<div>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'space-around'
+  }}
+>
   <Button onClick={() => alert('Clicked!')}>Click Me!</Button>
+  <Button onClick={() => alert('Clicked!')} disabled>
+    Click Me?
+  </Button>
 </div>
 ```
