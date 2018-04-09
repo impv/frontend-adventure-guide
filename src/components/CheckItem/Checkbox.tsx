@@ -24,13 +24,10 @@ const Container = styled.span`
   border-radius: 3px;
 `
 
-const Checkbox: React.SFC<Props> = ({ checked }) =>
-  checked ? (
-    <Container checked={checked}>
-      <Check />
-    </Container>
-  ) : (
-    <Container checked={checked} />
-  )
+const Checkbox: React.SFC<Props> = ({ checked }) => (
+  <Container checked={checked}>
+    <Check checked={checked} />
+  </Container>
+)
 
 export default Checkbox

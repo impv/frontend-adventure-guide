@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { Themed } from '~/styles/theme'
 
-const size = 28
+const size = 30
 
 type Props = Themed
 
@@ -14,7 +14,7 @@ const Container = styled.span`
   display: block;
   width: ${size}px;
   height: ${size}px;
-  padding: ${size}px;
+  padding: ${size * 1.2}px;
   box-sizing: border-box;
 
   // appearance

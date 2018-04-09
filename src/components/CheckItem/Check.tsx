@@ -4,32 +4,44 @@ import styled from 'styled-components'
 
 import { Themed } from '~/styles/theme'
 
-type Props = Themed
+type SVGProps = Themed & Props
+
+const strokeLength = 50
 
 const SVG = styled.svg`
-  fill: ${({ theme }: Props) => theme.primaryColor};
-  width: ${({ theme }: Props) => theme.fontSize + 1}px;
-  height: ${({ theme }: Props) => theme.fontSize + 1}px;
+  fill: ${({ theme }: SVGProps) => theme.primaryColor};
+  width: ${({ theme }: SVGProps) => theme.fontSize + 1}px;
+  height: ${({ theme }: SVGProps) => theme.fontSize + 1}px;
+
+  transition: stroke-dashoffset 0.2s ease;
+  stroke: ${({ theme }) => theme.primaryColor};
+  stroke-dasharray: ${strokeLength};
+  stroke-dashoffset: ${({ checked }: SVGProps) => (checked ? 0 : strokeLength)};
+  stroke-width: 2.5px;
+  fill-opacity: 0;
 `
 
-const Check: React.SFC = () => (
+interface Props {
+  checked: boolean
+}
+
+const Check: React.SFC<Props> = ({ checked }) => (
   <SVG
-    viewBox="0 0 21 21"
-    version="1.1"
+    checked={checked}
     xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    id="svg4148"
+    viewBox="0 0 20.999999 20.999999"
+    height="21"
+    width="21"
   >
-    <g id="Canvas" transform="translate(1161 257)">
-      <g id="Vector">
-        <use xlinkHref="#path0_stroke" transform="translate(-1159.5 -256)" />
-      </g>
-    </g>
-    <defs>
+    <defs id="defs4150" />
+    <g transform="translate(0,-1031.3622)" id="layer1">
       <path
-        id="path0_stroke"
-        d="M 7.28571 18L 6.54047 18.6668L 7.44849 19.6816L 8.14501 18.5115L 7.28571 18ZM -0.745241 10.5239L 6.54047 18.6668L 8.03096 17.3332L 0.745241 9.19035L -0.745241 10.5239ZM 8.14501 18.5115L 18.8593 0.511484L 17.1407 -0.511484L 6.42642 17.4885L 8.14501 18.5115Z"
+        id="path4146"
+        d="m 1.3766436,1042.3149 7.3855898,8.0974 10.7669506,-18.0635"
       />
-    </defs>
+    </g>
   </SVG>
 )
 
