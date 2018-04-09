@@ -3,6 +3,7 @@ import * as React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
 import Button from '~/components/Button'
+import CheckItem from '~/components/CheckItem'
 
 import { theme, Themed } from '~/styles/theme'
 
@@ -40,6 +41,7 @@ const App: React.StatelessComponent = () => (
           Hello, World!
         </Button>
       </Buttons>
+      <CheckItem checked>foo</CheckItem>
     </Container>
   </ThemeProvider>
 )
