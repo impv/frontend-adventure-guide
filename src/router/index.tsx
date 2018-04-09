@@ -15,7 +15,11 @@ export const ConnectedRouter: React.SFC = () => (
       <Route exact path="/" component={CheckList} />
       <Route exact path="/skill" component={SkillChart} />
       <Route exact path="/todo" component={ToDo} />
-      <Route exact path="/todo/:gener" component={ToDoDetails} />
+      <Route
+        exact
+        path="/todo/:ability"
+        render={({ match }) => <ToDoDetails params={match.params} />}
+      />
     </div>
   </BrowserRouter>
 )

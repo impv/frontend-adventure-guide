@@ -20,3 +20,22 @@ declare module '~/config/abilities.yml' {
 
   export const abilities: Ability[]
 }
+
+declare module '~/config/todo.yml' {
+  interface ToDo {
+    summary: string
+    detail: string
+  }
+
+  interface Level {
+    level: string
+    todos: ToDo[]
+  }
+
+  interface Ability {
+    ability: string
+    levels: Level[]
+  }
+
+  export const todo: Ability[]
+}
