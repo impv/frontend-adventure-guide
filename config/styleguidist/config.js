@@ -23,5 +23,19 @@ module.exports = {
         backgroundColor: '#F8BA69'
       }
     }
+  },
+  getComponentPathLine(componentPath) {
+    const name = componentPath
+      .split('/')
+      .slice(0, -1)
+      .reverse()[0]
+
+    const aliasedPath = componentPath
+      .replace('../../src/', '~/')
+      .split('/')
+      .slice(0, -1)
+      .join('/')
+
+    return `import ${name} from '${aliasedPath}'`
   }
 }
