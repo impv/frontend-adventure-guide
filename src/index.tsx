@@ -10,8 +10,6 @@ import { theme } from '~/styles/theme'
 import { ConnectedRouter } from '~/router'
 import store from '~/store'
 
-import App from '~/components/App'
-
 render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
