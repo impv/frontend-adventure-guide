@@ -7,14 +7,15 @@ import { ThemeProvider } from 'styled-components'
 
 import { theme } from '~/styles/theme'
 
-import store from './store'
+import { ConnectedRouter } from '~/router'
+import store from '~/store'
 
 import App from '~/components/App'
 
 render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
-      <App />
+      <ConnectedRouter />
     </Provider>
   </ThemeProvider>,
   document.getElementById('app')
