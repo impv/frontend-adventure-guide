@@ -18,20 +18,18 @@ const wants = [
 ]
 
 const App: React.StatelessComponent = () => (
-  <ThemeProvider theme={theme}>
-    <Page>
-      <PageHeader iconText="?">あなたのやりたいことは?</PageHeader>
-      {wants.map((want, i) => (
-        <CheckItem key={i} checked>
-          {want}
-        </CheckItem>
-      ))}
-      <PageFooter>
-        <Button type="primary">つぎへ</Button>
-        <Button type="outline">やっぱやめた</Button>
-      </PageFooter>
-    </Page>
-  </ThemeProvider>
+  <Page>
+    <PageHeader iconText="?">あなたのやりたいことは?</PageHeader>
+    {wants.map((want, i) => (
+      <CheckItem key={i} checked>
+        {want}
+      </CheckItem>
+    ))}
+    <PageFooter>
+      <Button type="primary">つぎへ</Button>
+      <Button type="outline">やっぱやめた</Button>
+    </PageFooter>
+  </Page>
 )
 
 export default App
