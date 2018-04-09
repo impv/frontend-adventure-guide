@@ -2,12 +2,17 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-const size = 13
+import { Themed } from '~/styles/theme'
+
+type Props = Themed
 
 const Wrapper = styled.label`
+  // layout
+  vertical-align: middle;
+
   // appearance
   color: #fff;
-  font-size: ${size}px;
+  font-size: ${({ theme }: Props) => theme.fontSize}px;
 
   // misc
   cursor: pointer;

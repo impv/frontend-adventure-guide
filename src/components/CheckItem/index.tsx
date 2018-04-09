@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import Checkbox from './Checkbox'
 import Input from './Input'
+import Label from './Label'
 import Wrapper from './Wrapper'
 
 interface Props {
@@ -11,13 +12,28 @@ interface Props {
    * チェックされているかどうか
    */
   checked: boolean
+  /**
+   * チェック状態が変化した場合のハンドラ
+   */
+  onChange?: (checked: boolean) => any
 }
 
-export const CheckItem: React.SFC<Props> = ({ checked, children }) => (
+/**
+ * ラベル付きチェック項目
+ */
+export const CheckItem: React.SFC<Props> = ({
+  checked,
+  children,
+  onChange
+}) => (
   <Wrapper>
-    <Input type="checkbox" checked={checked} />
+    <Input
+      type="checkbox"
+      checked={checked}
+      onChange={ev => (onChange ? onChange(ev.target.checked) : 0)}
+    />
     <Checkbox checked={checked} />
-    {children}
+    <Label>{children}</Label>
   </Wrapper>
 )
 

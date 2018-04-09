@@ -4,36 +4,33 @@ import styled from 'styled-components'
 
 import { Themed } from '~/styles/theme'
 
+import Check from './Check'
+
 interface Props extends Themed {
   checked: boolean
 }
 
-const size = 13
-
-const Checkbox = styled.span`
+const Container = styled.span`
   // layout
   position: relative;
   display: inline-block;
-  width: ${size}px;
-  height: ${size}px;
-  box-sizing: content-box;
+  width: ${({ theme }: Props) => theme.fontSize + 1}px;
+  height: ${({ theme }: Props) => theme.fontSize + 1}px;
+  box-sizing: border-box;
+  vertical-align: middle;
 
   // appearance
   border: 1px solid #fff;
   border-radius: 3px;
-
-  ${({ checked, theme }: Props) =>
-    checked
-      ? `
-        &:after {
-          content: '✓';
-          position: absolute;
-          left: 0;
-
-          color: ${theme.primaryColor};
-        }
-      `
-      : ''};
 `
+
+const Checkbox: React.SFC<Props> = ({ checked }) =>
+  checked ? (
+    <Container checked={checked}>
+      <Check />
+    </Container>
+  ) : (
+    <Container checked={checked} />
+  )
 
 export default Checkbox
