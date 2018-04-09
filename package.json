@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/impv/frontend-adventure-guide#readme",
   "dependencies": {
-    "history": "^4.7.2",
     "polished": "^1.9.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
