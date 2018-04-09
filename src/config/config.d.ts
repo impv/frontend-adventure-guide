@@ -11,3 +11,12 @@ declare module '~/config/purposes.yml' {
 
   export const purposes: Purpose[]
 }
+
+declare module '~/config/abilities.yml' {
+  interface Ability {
+    name: string
+    displayName: string
+  }
+
+  export const abilities: Ability[]
+}
