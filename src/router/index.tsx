@@ -4,10 +4,10 @@ import { Route, BrowserRouter } from 'react-router-dom'
 
 import store from '~/store'
 
-import App from '~/components/App'
+import CheckList from '~/pages/CheckList'
 
 export const ConnectedRouter: React.SFC = () => (
   <BrowserRouter>
-    <Route exact path="/" component={App} />
+    <Route exact path="/" component={CheckList} />
   </BrowserRouter>
 )
