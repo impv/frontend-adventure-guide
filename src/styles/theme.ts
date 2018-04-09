@@ -11,7 +11,7 @@ export interface Themed {
 
 export const theme: Theme = {
   baseColor: '#F8BA69',
-  fontSize: 13,
+  fontSize: 16,
   primaryColor: '#03D1AB',
   secondaryColor: '#4E1C81'
 }
