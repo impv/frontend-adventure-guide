@@ -4,7 +4,6 @@ const { createConfig, babel, typescript, resolve } = require('webpack-blocks')
 
 module.exports = {
   components: '../../src/components/**/index.{ts,tsx}',
-  ignore: ['**/components/App/**/*'],
   showCode: true,
   showUsage: true,
   styleguideDir: path.resolve(__dirname, '../../styleguide'),

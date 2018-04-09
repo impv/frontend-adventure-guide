@@ -1,6 +1,20 @@
 import * as React from 'react'
 import { render } from 'react-dom'
 
-import App from '~/components/App'
+import { Provider } from 'react-redux'
 
-render(<App />, document.getElementById('app'))
+import { ThemeProvider } from 'styled-components'
+
+import { theme } from '~/styles/theme'
+
+import { ConnectedRouter } from '~/router'
+import store from '~/store'
+
+render(
+  <ThemeProvider theme={theme}>
+    <Provider store={store}>
+      <ConnectedRouter />
+    </Provider>
+  </ThemeProvider>,
+  document.getElementById('app')
+)

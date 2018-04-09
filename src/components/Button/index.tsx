@@ -9,7 +9,7 @@ import DisabledButton from './DisabledButton'
 import OutlineButton from './OutlineButton'
 import PrimaryButton from './PrimaryButton'
 
-interface Props {
+export interface Props {
   /**
    * ボタンの種類
    * @default default
