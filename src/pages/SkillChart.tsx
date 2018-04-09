@@ -11,7 +11,9 @@ const CheckList: React.StatelessComponent = () => (
   <Page>
     <PageHeader iconText="!">あなたに必要なスキル</PageHeader>
     <PageFooter>
-      <Button type="primary">なにをすればいい?</Button>
+      <Link to="/todo">
+        <Button type="primary">なにをすればいい?</Button>
+      </Link>
       <Link to="/">
         <Button type="outline">えらびなおす</Button>
       </Link>
