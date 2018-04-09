@@ -1,8 +1,15 @@
 import * as React from 'react'
 
+import styled from 'styled-components'
+
 import { Link } from 'react-router-dom'
 
 import Button, { Props as ButtonProps } from '~/components/Button'
+
+const StyledLink = styled(Link)`
+  // misc
+  text-decoration: none;
+`
 
 interface Props extends ButtonProps {
   /** 遷移先パス */
@@ -13,9 +20,9 @@ interface Props extends ButtonProps {
  * `<Button>`をreact-router-domの`<Link>`で囲ったもの
  */
 export const LinkButton: React.SFC<Props> = props => (
-  <Link to={props.to}>
+  <StyledLink to={props.to}>
     <Button {...props}>{props.children}</Button>
-  </Link>
+  </StyledLink>
 )
 
 export default LinkButton
