@@ -6,6 +6,8 @@ import Page from '~/components/Page'
 import PageFooter from '~/components/PageFooter'
 import PageHeader from '~/components/PageHeader'
 
+import { Link } from 'react-router-dom'
+
 const wants = [
   'なにかしたいのだ',
   'なにかわしゃわしゃしたいのだ',
@@ -22,8 +24,9 @@ const CheckList: React.StatelessComponent = () => (
       </CheckItem>
     ))}
     <PageFooter>
-      <Button type="primary">つぎへ</Button>
-      <Button type="outline">やっぱやめた</Button>
+      <Link to="/skill">
+        <Button type="primary">つぎへ</Button>
+      </Link>
     </PageFooter>
   </Page>
 )
