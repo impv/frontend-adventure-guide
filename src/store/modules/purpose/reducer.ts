@@ -1,4 +1,4 @@
-import { handleActions, Action } from 'redux-actions'
+import { Action, handleActions } from 'redux-actions'
 
 import { SetPurposes, ToggleSelect } from './actions'
 import { defaultState, State } from './state'
