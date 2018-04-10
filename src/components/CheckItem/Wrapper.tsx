@@ -10,7 +10,6 @@ const Wrapper = styled.label`
   // layout
   display: block;
   vertical-align: middle;
-  padding: 0.5em 0;
 
   // appearance
   color: #fff;
