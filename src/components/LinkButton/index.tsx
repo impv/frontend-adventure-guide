@@ -11,7 +11,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-interface Props extends ButtonProps {
+export interface Props extends ButtonProps {
   /** 遷移先パス */
   to: string
 }

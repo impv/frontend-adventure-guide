@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Icon from '~/components/Icon'
 import Title from '~/components/Title'
 
-interface Props {
+export interface Props {
   /** アイコンとして表示するテキスト */
   iconText: string
 }
