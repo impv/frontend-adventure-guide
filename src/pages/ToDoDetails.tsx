@@ -10,6 +10,8 @@ import PageHeader from '~/components/PageHeader'
 
 import { Link } from 'react-router-dom'
 
+import { todo } from '~/config/todo.yml'
+
 const Buttons = styled.div`
   // layout
   display: flex;
@@ -20,19 +22,37 @@ const Buttons = styled.div`
   }
 `
 
-const ToDo: React.StatelessComponent = () => (
+interface ToDoListProps {
+  ability: string
+}
+
+const ToDoList: React.SFC<ToDoListProps> = props => {
+  const ability = todo.find(({ ability: a }) => a === props.ability)
+
+  if (!ability) {
+    return <div>Invalid ability</div>
+  }
+
+  return (
+    <Buttons>
+      {ability.levels[0].todos.map(({ summary }) => (
+        <Button type="outline" block>
+          {summary}
+        </Button>
+      ))}
+    </Buttons>
+  )
+}
+
+interface Props {
+  params: { [key: string]: string }
+}
+
+const ToDo: React.SFC<Props> = ({ params }) => (
   <Page>
     <PageHeader iconText="...">先端技術力を高める</PageHeader>
     <Buttons>
-      <Button type="outline" block>
-        HTML/CSS/JSでできること、やるべきことを理解する
-      </Button>
-      <Button type="outline" block>
-        Canvas
-      </Button>
-      <Button type="outline" block>
-        LocalStorage/IndexedDB/SessionStorage
-      </Button>
+      <ToDoList ability={params.ability} />
     </Buttons>
     <PageFooter>
       <LinkButton to="/todo" type="primary">

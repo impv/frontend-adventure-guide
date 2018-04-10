@@ -1,0 +1,11 @@
+abilities:
+  - name: visual
+    displayName: ビジュアル力
+  - name: express
+    displayName: 表現力
+  - name: tech
+    displayName: 先端技術力
+  - name: application
+    displayName: アプリケーション力
+  - name: semantic
+    displayName: セマンティックWeb力

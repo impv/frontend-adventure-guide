@@ -9,6 +9,8 @@ import PageHeader from '~/components/PageHeader'
 
 import { Link } from 'react-router-dom'
 
+import { abilities } from '~/config/abilities.yml'
+
 const Buttons = styled.div`
   // layout
   display: flex;
@@ -23,18 +25,16 @@ const ToDo: React.StatelessComponent = () => (
   <Page>
     <PageHeader iconText="...">やるべきこと</PageHeader>
     <Buttons>
-      <LinkButton to="/todo/visual" type="outline" block>
-        ビジュアル力を高める
-      </LinkButton>
-      <LinkButton to="/todo/expression" type="outline" block>
-        表現力を高める
-      </LinkButton>
-      <LinkButton to="/todo/tech" type="outline" block>
-        先端技術力を高める
-      </LinkButton>
-      <LinkButton to="/todo/application" type="outline" block>
-        アプリケーション力を高める
-      </LinkButton>
+      {abilities.map(ability => (
+        <LinkButton
+          key={ability.name}
+          to={`/todo/${ability.name}`}
+          type="outline"
+          block
+        >
+          {ability.displayName}
+        </LinkButton>
+      ))}
     </Buttons>
     <PageFooter>
       <LinkButton to="/" type="primary">

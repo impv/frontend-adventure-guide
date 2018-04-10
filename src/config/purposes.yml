@@ -1,0 +1,77 @@
+purposes:
+  - purpose: ブラウザアプリケーションのロジック層を書ける
+    requires:
+      - ability: tech
+        level: 2
+      - ability: application
+        level: 3
+  - purpose: ブラウザアプリケーションのView層を書ける
+    requires:
+      - ability: visual
+        level: 2
+      - ability: express
+        level: 3
+      - ability: application
+        level: 1
+  - purpose: ブラウザアプリケーションの設計・構築を行える
+    requires:
+      - ability: tech
+        level: 4
+      - ability: application
+        level: 5
+      - ability: semantic
+        level: 2
+  - purpose: 思い通りのサイトをpain-freeで作れる
+    requires:
+      - ability: visual
+        level: 4
+      - ability: express
+        level: 4
+      - ability: application
+        level: 1
+      - ability: application
+        level: 1
+  - purpose: ブラウザゲームを作れる
+    requires:
+      - ability: tech
+        level: 4
+      - ability: application
+        level: 2
+  - purpose: 今までにないWeb体験を作っていける
+    requires:
+      - ability: tech
+        level: 5
+      - ability: application
+        level: 2
+  - purpose: Webならではの表現力をもったサイトを作れる
+    requires:
+      - ability: visual
+        level: 3
+      - ability: express
+        level: 5
+      - ability: tech
+        level: 4
+  - purpose: アクセシビリティが高いサイトを作れる
+    requires:
+      - ability: visual
+        level: 1
+      - ability: semantic
+        level: 4
+  - purpose: 思い通りのデザイン/インタラクションを備えたサイトを作れる
+    requires:
+      - ability: visual
+        level: 5
+      - ability: express
+        level: 5
+  - purpose: 最適化されたサイトを制作できる
+    requires:
+      - ability: semantic
+        level: 5
+  - purpose: サーバサイドWebアプリの静的ファイルにインタラクションを付与できる
+    requires:
+      - ability: express
+        level: 3
+      - ability: tech
+        level: 1
+      - ability: application
+        level: 1

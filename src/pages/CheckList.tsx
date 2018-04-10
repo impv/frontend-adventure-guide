@@ -8,21 +8,22 @@ import PageHeader from '~/components/PageHeader'
 
 import { Link } from 'react-router-dom'
 
-const wants = [
-  'なにかしたいのだ',
-  'なにかわしゃわしゃしたいのだ',
-  'なにかしたいのだ',
-  'なにかもふもふしたくてたまらないのだ'
-]
+import { purposes } from '~/config/purposes.yml'
+
+const CheckItems: React.SFC = () => (
+  <div>
+    {purposes.map(({ purpose }) => (
+      <CheckItem key={purpose} checked>
+        {purpose}
+      </CheckItem>
+    ))}
+  </div>
+)
 
 const CheckList: React.StatelessComponent = () => (
   <Page>
     <PageHeader iconText="?">あなたのやりたいことは?</PageHeader>
-    {wants.map((want, i) => (
-      <CheckItem key={i} checked>
-        {want}
-      </CheckItem>
-    ))}
+    <CheckItems />
     <PageFooter>
       <Link to="/skill">
         <Button type="primary">つぎへ</Button>
