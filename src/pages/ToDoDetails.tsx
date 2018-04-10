@@ -27,7 +27,7 @@ interface ToDoListProps {
 }
 
 const ToDoList: React.SFC<ToDoListProps> = props => {
-  const ability = todo.find(({ ability }) => ability === props.ability)
+  const ability = todo.find(({ ability: a }) => a === props.ability)
 
   if (!ability) {
     return <div>Invalid ability</div>
