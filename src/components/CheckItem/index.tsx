@@ -7,7 +7,7 @@ import Input from './Input'
 import Label from './Label'
 import Wrapper from './Wrapper'
 
-interface Props {
+export interface Props {
   /**
    * チェックされているかどうか
    */

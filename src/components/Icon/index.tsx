@@ -6,7 +6,7 @@ import { Themed } from '~/styles/theme'
 
 const size = 30
 
-type Props = Themed
+export type Props = Themed
 
 const Container = styled.span`
   // layout

@@ -1,13 +1,5 @@
 declare module '~/config/purposes.yml' {
-  interface Requirement {
-    ability: string
-    level: number
-  }
-
-  interface Purpose {
-    purpose: string
-    requires: Requirement[]
-  }
+  import Purpose from '~/types/Purpose'
 
   export const purposes: Purpose[]
 }

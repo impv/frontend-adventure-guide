@@ -11,7 +11,7 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `
 
-interface Props extends ButtonProps {
+export interface Props extends ButtonProps {
   /** 遷移先パス */
   to: string
 }
@@ -19,10 +19,13 @@ interface Props extends ButtonProps {
 /**
  * `<Button>`をreact-router-domの`<Link>`で囲ったもの
  */
-export const LinkButton: React.SFC<Props> = props => (
-  <StyledLink to={props.to}>
+export const LinkButton: React.SFC<Props> = props =>
+  props.disabled ? (
     <Button {...props}>{props.children}</Button>
-  </StyledLink>
-)
+  ) : (
+    <StyledLink to={props.to}>
+      <Button {...props}>{props.children}</Button>
+    </StyledLink>
+  )
 
 export default LinkButton
