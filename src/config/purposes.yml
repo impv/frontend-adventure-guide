@@ -1,77 +1,77 @@
 purposes:
-  - purpose: ブラウザアプリケーションのロジック層を書ける
-    requires:
-      - ability: tech
+  - description: ブラウザアプリケーションのロジック層を書ける
+    requirements:
+      - skill: tech
         level: 2
-      - ability: application
+      - skill: application
         level: 3
-  - purpose: ブラウザアプリケーションのView層を書ける
-    requires:
-      - ability: visual
+  - description: ブラウザアプリケーションのView層を書ける
+    requirements:
+      - skill: visual
         level: 2
-      - ability: express
+      - skill: express
         level: 3
-      - ability: application
+      - skill: application
         level: 1
-  - purpose: ブラウザアプリケーションの設計・構築を行える
-    requires:
-      - ability: tech
+  - description: ブラウザアプリケーションの設計・構築を行える
+    requirements:
+      - skill: tech
         level: 4
-      - ability: application
+      - skill: application
         level: 5
-      - ability: semantic
+      - skill: semantic
         level: 2
-  - purpose: 思い通りのサイトをpain-freeで作れる
-    requires:
-      - ability: visual
+  - description: 思い通りのサイトをpain-freeで作れる
+    requirements:
+      - skill: visual
         level: 4
-      - ability: express
+      - skill: express
         level: 4
-      - ability: application
+      - skill: application
         level: 1
-      - ability: application
+      - skill: application
         level: 1
-  - purpose: ブラウザゲームを作れる
-    requires:
-      - ability: tech
+  - description: ブラウザゲームを作れる
+    requirements:
+      - skill: tech
         level: 4
-      - ability: application
+      - skill: application
         level: 2
-  - purpose: 今までにないWeb体験を作っていける
-    requires:
-      - ability: tech
+  - description: 今までにないWeb体験を作っていける
+    requirements:
+      - skill: tech
         level: 5
-      - ability: application
+      - skill: application
         level: 2
-  - purpose: Webならではの表現力をもったサイトを作れる
-    requires:
-      - ability: visual
+  - description: Webならではの表現力をもったサイトを作れる
+    requirements:
+      - skill: visual
         level: 3
-      - ability: express
+      - skill: express
         level: 5
-      - ability: tech
+      - skill: tech
         level: 4
-  - purpose: アクセシビリティが高いサイトを作れる
-    requires:
-      - ability: visual
+  - description: アクセシビリティが高いサイトを作れる
+    requirements:
+      - skill: visual
         level: 1
-      - ability: semantic
+      - skill: semantic
         level: 4
-  - purpose: 思い通りのデザイン/インタラクションを備えたサイトを作れる
-    requires:
-      - ability: visual
+  - description: 思い通りのデザイン/インタラクションを備えたサイトを作れる
+    requirements:
+      - skill: visual
         level: 5
-      - ability: express
+      - skill: express
         level: 5
-  - purpose: 最適化されたサイトを制作できる
-    requires:
-      - ability: semantic
+  - description: 最適化されたサイトを制作できる
+    requirements:
+      - skill: semantic
         level: 5
-  - purpose: サーバサイドWebアプリの静的ファイルにインタラクションを付与できる
-    requires:
-      - ability: express
+  - description: サーバサイドWebアプリの静的ファイルにインタラクションを付与できる
+    requirements:
+      - skill: express
         level: 3
-      - ability: tech
+      - skill: tech
         level: 1
-      - ability: application
+      - skill: application
         level: 1
