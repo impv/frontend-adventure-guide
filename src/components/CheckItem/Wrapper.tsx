@@ -17,6 +17,7 @@ const Wrapper = styled.label`
 
   // misc
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `
 
 export default Wrapper

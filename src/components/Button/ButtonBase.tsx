@@ -25,6 +25,7 @@ const ButtonBase = styled.button`
   // misc
   outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
   &::-moz-focus-inner {
     border: 0;
