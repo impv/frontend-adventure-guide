@@ -1,11 +1,11 @@
 import * as React from 'react'
 
 import {
-  Radar,
-  RadarChart,
-  PolarGrid,
   PolarAngleAxis,
-  PolarRadiusAxis
+  PolarGrid,
+  PolarRadiusAxis,
+  Radar,
+  RadarChart
 } from 'recharts'
 
 import Skill from '~/types/Skill'
