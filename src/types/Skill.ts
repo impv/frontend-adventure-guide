@@ -1,9 +1,9 @@
 /** 必要なスキル */
-interface Requirement {
+interface Skill {
   /** スキル名 */
   skill: string
   /** 必要なスキルのレベル */
   level: number
 }
 
-export default Requirement
+export default Skill

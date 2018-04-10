@@ -1,4 +1,4 @@
-import Requirement from './Requirement'
+import Requirement from './Skill'
 
 /** やりたいこと */
 interface Purpose {
