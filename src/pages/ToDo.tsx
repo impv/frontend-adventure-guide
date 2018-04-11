@@ -7,35 +7,14 @@ import Page from '~/components/Page'
 import PageFooter from '~/components/PageFooter'
 import PageHeader from '~/components/PageHeader'
 
-import { Link } from 'react-router-dom'
-
-import { skills } from '~/config/skills.yml'
-
-const Buttons = styled.div`
-  // layout
-  display: flex;
-  flex-direction: column;
-
-  > *:not(:first-child) {
-    margin-top: 1em;
-  }
-`
+import ToDoSkillList from '~/containers/ToDoSkillList'
 
 const ToDo: React.StatelessComponent = () => (
   <Page>
     <PageHeader iconText="...">やるべきこと</PageHeader>
-    <Buttons>
-      {skills.map(ability => (
-        <LinkButton
-          key={ability.name}
-          to={`/todo/${ability.name}`}
-          type="outline"
-          block
-        >
-          {ability.label}
-        </LinkButton>
-      ))}
-    </Buttons>
+    <SkillListContainer>
+      <ToDoSkillList />
+    </SkillListContainer>
     <PageFooter>
       <LinkButton to="/" type="primary">
         さいしょにもどる
@@ -45,3 +24,13 @@ const ToDo: React.StatelessComponent = () => (
 )
 
 export default ToDo
+
+const SkillListContainer = styled.div`
+  // layout
+  display: flex;
+  justify-content: space-around;
+
+  > * {
+    flex-grow: 1;
+  }
+`
