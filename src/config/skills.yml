@@ -16,7 +16,7 @@ skills:
     description: |
       SPAに代表される複雑なブラウザアプリケーションを構築する能力
   - name: semantic
-    label: セマンティックWeb力
+    label: セマンティック力
     description: |
       アクセシビリティやi18n, 標準化マークアップ等のドキュメンテーション最適化を行い、
       マシンリーダブルなドキュメントを作成/構築する能力
