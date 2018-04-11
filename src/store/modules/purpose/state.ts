@@ -11,7 +11,7 @@ export interface State {
 export const defaultState: State = {
   purposes: [],
   requirements: Object.keys(SkillType).map(key => ({
-    skill: SkillType[key],
-    level: 0
+    level: 0,
+    skill: SkillType[key]
   }))
 }
