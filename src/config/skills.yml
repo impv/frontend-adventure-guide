@@ -1,0 +1,22 @@
+skills:
+  - name: visual
+    label: ビジュアル力
+    description: |
+      Web向けの版組やデザイン起こしをする能力
+  - name: express
+    label: 表現力
+    description: |
+      Webならではの表現をする能力
+  - name: tech
+    label: 先端技術力
+    description: |
+      Webに関わる新旧様々な技術に適用しそれらを活用する能力
+  - name: application
+    label: アプリケーション力
+    description: |
+      SPAに代表される複雑なブラウザアプリケーションを構築する能力
+  - name: semantic
+    label: セマンティック力
+    description: |
+      アクセシビリティやi18n, 標準化マークアップ等のドキュメンテーション最適化を行い、
+      マシンリーダブルなドキュメントを作成/構築する能力

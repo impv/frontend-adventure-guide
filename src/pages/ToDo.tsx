@@ -9,7 +9,7 @@ import PageHeader from '~/components/PageHeader'
 
 import { Link } from 'react-router-dom'
 
-import { abilities } from '~/config/abilities.yml'
+import { skills } from '~/config/skills.yml'
 
 const Buttons = styled.div`
   // layout
@@ -25,14 +25,14 @@ const ToDo: React.StatelessComponent = () => (
   <Page>
     <PageHeader iconText="...">やるべきこと</PageHeader>
     <Buttons>
-      {abilities.map(ability => (
+      {skills.map(ability => (
         <LinkButton
           key={ability.name}
           to={`/todo/${ability.name}`}
           type="outline"
           block
         >
-          {ability.displayName}
+          {ability.label}
         </LinkButton>
       ))}
     </Buttons>

@@ -1,14 +1,11 @@
+import Requirement from './Skill'
+
 /** やりたいこと */
 interface Purpose {
   /** やりたいことの内容 */
   description: string
   /** 必要なスキル */
-  requirements: Array<{
-    /** スキル名 */
-    skill: string
-    /** 必要なスキルのレベル */
-    level: number
-  }>
+  requirements: Requirement[]
 }
 
 export default Purpose
