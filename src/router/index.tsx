@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { Route, Redirect } from 'react-router'
+import { Redirect, Route } from 'react-router'
 import { ConnectedRouter } from 'react-router-redux'
 
 import store from '~/store'

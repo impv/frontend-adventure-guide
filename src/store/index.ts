@@ -1,6 +1,6 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 
-import { routerReducer, routerMiddleware } from 'react-router-redux'
+import { routerMiddleware, routerReducer } from 'react-router-redux'
 
 import purpose, { State as Purpose } from './modules/purpose'
 import skillDetail, { State as SkillDetail } from './modules/skillDetail'
