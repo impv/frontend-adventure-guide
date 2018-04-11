@@ -9,19 +9,25 @@ import {
 } from 'recharts'
 
 import Skill from '~/types/Skill'
+import SkillDetail from '~/types/SkillDetail'
 
 export interface Props {
   /** 必要なスキル一覧 */
-  skills: Skill[]
+  requiredSkills: Skill[]
+  /** スキルについての詳細 */
+  skillDetails: SkillDetail[]
 }
 
 /** スキルグラフ */
-export const SkillChart: React.SFC<Props> = ({ skills }) => (
-  <RadarChart width={500} height={300} data={skills}>
+export const SkillChart: React.SFC<Props> = ({
+  requiredSkills,
+  skillDetails
+}) => (
+  <RadarChart width={500} height={300} data={requiredSkills}>
     <PolarGrid stroke="#fff" />
     <PolarAngleAxis
       dataKey="skill"
-      tickFormatter={x => x}
+      tickFormatter={name => lookupSkillLabel(name, skillDetails)}
       tick={{ fill: '#fff', fontSize: '0.8em' }}
     />
     <PolarRadiusAxis
@@ -35,3 +41,6 @@ export const SkillChart: React.SFC<Props> = ({ skills }) => (
 )
 
 export default SkillChart
+
+const lookupSkillLabel = (skillName: string, skillDetails: SkillDetail[]) =>
+  skillDetails.filter(d => d.name === skillName).map(d => d.label) || skillName

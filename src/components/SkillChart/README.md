@@ -1,12 +1,19 @@
 ```jsx
 initialState = {
   skills: [
-    { skill: 'ビジュアル力', level: 0 },
-    { skill: '表現力', level: 4 },
-    { skill: '先端技術力', level: 2 },
-    { skill: 'アプリケーション力', level: 5 },
-    { skill: 'セマンティックWeb力', level: 3 }
+    { skill: 'visual', level: 0 },
+    { skill: 'express', level: 4 },
+    { skill: 'tech', level: 2 },
+    { skill: 'application', level: 5 },
+    { skill: 'semantic', level: 3 }
+  ],
+  skillDetails: [
+    { name: 'visual', label: 'ビジュアル力', description: '' },
+    { name: 'express', label: '表現力', description: '' },
+    { name: 'tech', label: '先端技術力', description: '' },
+    { name: 'application', label: 'アプリケーション力', description: '' },
+    { name: 'semantic', label: 'セマンティックWeb力', description: '' }
   ]
 }
-;<SkillChart skills={state.skills} />
+;<SkillChart requiredSkills={state.skills} skillDetails={state.skillDetails} />
 ```
