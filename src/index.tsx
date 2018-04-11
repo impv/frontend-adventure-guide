@@ -11,10 +11,14 @@ import { ConnectedRouter } from '~/router'
 import store from '~/store'
 
 import { purposes } from '~/config/purposes.yml'
+import { skills } from '~/config/skills.yml'
+
 import { setPurposes } from '~/store/modules/purpose'
+import { setSkillDetails } from '~/store/modules/skillDetail'
 
 // ストアの初期化
 store.dispatch(setPurposes({ purposes }))
+store.dispatch(setSkillDetails({ details: skills }))
 
 render(
   <ThemeProvider theme={theme}>
