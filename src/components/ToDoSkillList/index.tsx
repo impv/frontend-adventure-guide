@@ -17,7 +17,12 @@ export interface Props {
 export const ToDoSkillList: React.SFC<Props> = ({ skills, onSelect }) => (
   <Container>
     {skills.map(skill => (
-      <Button key={skill.name} type="outline" onClick={() => onSelect(skill)}>
+      <Button
+        key={skill.name}
+        block
+        type="outline"
+        onClick={() => onSelect(skill)}
+      >
         {skill.label}
       </Button>
     ))}
