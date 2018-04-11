@@ -4,13 +4,10 @@ declare module '~/config/purposes.yml' {
   export const purposes: Purpose[]
 }
 
-declare module '~/config/abilities.yml' {
-  interface Ability {
-    name: string
-    displayName: string
-  }
+declare module '~/config/skills.yml' {
+  import SkillDetail from '~/types/SkillDetail'
 
-  export const abilities: Ability[]
+  export const skills: SkillDetail[]
 }
 
 declare module '~/config/todo.yml' {
