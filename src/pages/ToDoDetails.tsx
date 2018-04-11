@@ -10,7 +10,7 @@ import PageHeader from '~/components/PageHeader'
 
 import { Link } from 'react-router-dom'
 
-import { todo } from '~/config/todo.yml'
+import { todos } from '~/config/todo.yml'
 
 const Buttons = styled.div`
   // layout
@@ -26,23 +26,15 @@ interface ToDoListProps {
   ability: string
 }
 
-const ToDoList: React.SFC<ToDoListProps> = props => {
-  const ability = todo.find(({ ability: a }) => a === props.ability)
-
-  if (!ability) {
-    return <div>Invalid ability</div>
-  }
-
-  return (
-    <Buttons>
-      {ability.levels[0].todos.map(({ summary }) => (
-        <Button type="outline" block>
-          {summary}
-        </Button>
-      ))}
-    </Buttons>
-  )
-}
+const ToDoList: React.SFC<ToDoListProps> = props => (
+  <Buttons>
+    {todos.filter(todo => todo.skill === props.ability).map(({ summary }) => (
+      <Button key={summary} type="outline" block>
+        {summary}
+      </Button>
+    ))}
+  </Buttons>
+)
 
 interface Props {
   params: { [key: string]: string }

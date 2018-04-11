@@ -11,20 +11,7 @@ declare module '~/config/skills.yml' {
 }
 
 declare module '~/config/todo.yml' {
-  interface ToDo {
-    summary: string
-    detail: string
-  }
+  import ToDo from '~/types/ToDo'
 
-  interface Level {
-    level: string
-    todos: ToDo[]
-  }
-
-  interface Ability {
-    ability: string
-    levels: Level[]
-  }
-
-  export const todo: Ability[]
+  export const todos: ToDo[]
 }

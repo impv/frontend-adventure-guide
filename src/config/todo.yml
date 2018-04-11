@@ -1,283 +1,335 @@
-todo:
+todos:
   # ==============================
   # ビジュアル力
-  - ability: visual
-    levels:
-      # ------------------------------
-      # レベルD
-      - level: 適切な要素や属性を用いてスタイリングを行うことができる
-        todos:
-          - summary: HTML, CSSの正しい標準を扱えるようになる
-            detail: |
-              あああああああ
-          - summary: MDN, Can I Useを使うようにする
-            detail: |
-              あああああああ
-          - summary: W3Cが出している仕様を読めるようになる
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルC
-      - level: 普通のデザインであればそのままに起こすことができる
-        todos:
-          - summary: 一般的なデザインにおけるCSSの知識
-            detail: |
-              あああああああ
-          - summary: CSSフレームワーク
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルB
-      - level: どのようなデザインでも起こすことができる
-        todos:
-          - summary: 広範なCSS,HTMLの知識
-            detail: |
-              あああああああ
-          - summary: スタイルの構造化
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルA
-      - level: レスポンシブ(≠ブレークポイントを設置しただけ)等のWebらしい表現を適用できる
-        todos:
-          - summary: グリッドデザイン(CSS Grid, フレームワーク/ライブラリ)
-            detail: |
-              あああああああ
-          - summary: flexbox
-            detail: |
-              あああああああ
-          - summary: SVG
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルS
-      - level: Webならではのデザインや版組等を考え、提案することができる
-        todos: []
+  # ------------------------------
+  # レベルD
+  - summary: HTML, CSSの正しい標準を扱えるようになる
+    detail: |
+      あああああああ
+    skill: visual
+    level: 1
+  - summary: MDN, Can I Useを使うようにする
+    detail: |
+      あああああああ
+    skill: visual
+    level: 1
+  - summary: W3Cが出している仕様を読めるようになる
+    detail: |
+      あああああああ
+    skill: visual
+    level: 1
+  # ------------------------------
+  # レベルC
+  - summary: 一般的なデザインにおけるCSSの知識
+    detail: |
+      あああああああ
+    skill: visual
+    level: 2
+  - summary: CSSフレームワーク
+    detail: |
+      あああああああ
+    skill: visual
+    level: 2
+  # ------------------------------
+  # レベルB
+  - summary: 広範なCSS,HTMLの知識
+    detail: |
+      あああああああ
+    skill: visual
+    level: 3
+  - summary: スタイルの構造化
+    detail: |
+      あああああああ
+    skill: visual
+    level: 3
+  # ------------------------------
+  # レベルA
+  - summary: グリッドデザイン(CSS Grid, フレームワーク/ライブラリ)
+    detail: |
+      あああああああ
+    skill: visual
+    level: 4
+  - summary: flexbox
+    detail: |
+      あああああああ
+    skill: visual
+    level: 4
+  - summary: SVG
+    detail: |
+      あああああああ
+    skill: visual
+    level: 4
+  # ------------------------------
+  # レベルS
+
   # ==============================
   # 表現力
-  - ability: express
-    levels:
-      # ------------------------------
-      # レベルD
-      - level: 簡単なアニメーションを実装することができる
-        todos:
-          - summary: CSS transition/animationの基礎を学ぶ
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルC
-      - level: 基本的なインタラクションを実装することができる
-        todos:
-          - summary: CSS transition/animation
-            detail: |
-              あああああああ
-          - summary: JSによるパフォーマンスを意識したインタラクションの実装
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルB
-      - level: その場に適切な手段を用いて表現を行える
-        todos:
-          - summary: jQuery
-            detail: |
-              あああああああ
-          - summary: Vue.jsの基本的な使用法
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルA
-      - level: 技術の枠にとらわれず思い通りの表現ができる
-        todos:
-          - summary: SVG
-            detail: |
-              あああああああ
-          - summary: Three.js
-            detail: |
-              あああああああ
-          - summary: Pixi.js
-            detail: |
-              あああああああ
-          - summary: Canvas
-            detail: |
-              あああああああ
-          - summary: Snap.svg
-            detail: |
-              あああああああ
-          - summary: particles.js
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルS
-      - level: 印象的/魅力的/訴求力のある表現を考え、それを構築することができる
-        todos:
-          - summary: 幅広いライブラリや表現手法,実際のユースケースに関する知識
-            detail: |
-              あああああああ
-          - summary: 効果的なライブラリの使用
-            detail: |
-              あああああああ
+  # ------------------------------
+  # レベルD
+  - summary: CSS transition/animationの基礎を学ぶ
+    detail: |
+      あああああああ
+    skill: express
+    level: 1
+  # ------------------------------
+  # レベルC
+  - summary: CSS transition/animation
+    detail: |
+      あああああああ
+    skill: express
+    level: 2
+  - summary: JSによるパフォーマンスを意識したインタラクションの実装
+    detail: |
+      あああああああ
+    skill: express
+    level: 2
+  # ------------------------------
+  # レベルB
+  - summary: jQuery
+    detail: |
+      あああああああ
+    skill: express
+    level: 3
+  - summary: Vue.jsの基本的な使用法
+    detail: |
+      あああああああ
+    skill: express
+    level: 3
+  # ------------------------------
+  # レベルA
+  - summary: SVG
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  - summary: Three.js
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  - summary: Pixi.js
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  - summary: Canvas
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  - summary: Snap.svg
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  - summary: particles.js
+    detail: |
+      あああああああ
+    skill: express
+    level: 4
+  # ------------------------------
+  # レベルS
+  - summary: 幅広いライブラリや表現手法,実際のユースケースに関する知識
+    detail: |
+      あああああああ
+    skill: express
+    level: 5
+  - summary: 効果的なライブラリの使用
+    detail: |
+      あああああああ
+    skill: express
+    level: 5
+
   # ==============================
   # 先端技術力
-  - ability: tech
-    levels:
-      # ------------------------------
-      # レベルD
-      - level: ブラウザ技術の位置づけ、できることを理解している
-        todos:
-          - summary: HTML/CSS/JSでできること、やるべきことを理解する
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルC
-      - level: Canvas等の"枯れた"技術を扱うことができる/適応できる
-        todos:
-          - summary: Canvas
-            detail: |
-              あああああああ
-          - summary: LocalStorage/IndexedDB/SessionStorage
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルB
-      - level: WASMやWebWorker等の新技術を扱うことができる/適応できる
-        todos:
-          - summary: WebAssembly
-            detail: |
-              あああああああ
-          - summary: WebWorker
-            detail: |
-              あああああああ
-          - summary: WebSpeech
-            detail: |
-              あああああああ
-          - summary: asm.js
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルA
-      - level: 必要な表現に対して、有効な技術を提案/適用できる
-        todos:
-          - summary: ある技術がProduction readyかどうか見極める能力
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルS
-      - level: 技術を用いた表現等を考え、提案することができる
-        todos: []
+  # ------------------------------
+  # レベルD
+  - summary: HTML/CSS/JSでできること、やるべきことを理解する
+    detail: |
+      あああああああ
+    skill: tech
+    level: 1
+  # ------------------------------
+  # レベルC
+  - summary: Canvas
+    detail: |
+      あああああああ
+    skill: tech
+    level: 2
+  - summary: LocalStorage/IndexedDB/SessionStorage
+    detail: |
+      あああああああ
+    skill: tech
+    level: 2
+  # ------------------------------
+  # レベルB
+  - summary: WebAssembly
+    detail: |
+      あああああああ
+    skill: tech
+    level: 3
+  - summary: WebWorker
+    detail: |
+      あああああああ
+    skill: tech
+    level: 3
+  - summary: WebSpeech
+    detail: |
+      あああああああ
+    skill: tech
+    level: 3
+  - summary: asm.js
+    detail: |
+      あああああああ
+    skill: tech
+    level: 3
+  # ------------------------------
+  # レベルA
+  - summary: ある技術がProduction readyかどうか見極める能力
+    detail: |
+      あああああああ
+    skill: tech
+    level: 4
+  # ------------------------------
+  # レベルS
+
   # ==============================
-  # ビジュアル力
-  - ability: application
-    levels:
-      # ------------------------------
-      # レベルD
-      - level: JSだけですべて完結するシンプルなアプリケーションが書ける
-        todos:
-          - summary: Javascript(ES5~ES2017)
-            detail: |
-              あああああああ
-          - summary: npmエコシステムを使ったJSライブラリの使用
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルC
-      - level: LocalStorageやAPI等を用いるアプリケーションが書ける
-        todos:
-          - summary: fetch API
-            detail: |
-              あああああああ
-          - summary: REST(ful) APIの知識/使用
-            detail: |
-              あああああああ
-          - summary: localforage
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルB
-      - level: 複数のライブラリやフレームワークを使い分けることができる
-        todos:
-          - summary: Typescript
-            detail: |
-              あああああああ
-          - summary: MVCやMVVM,FluxなどのGUIアプリケーションアーキテクチャの知識
-            detail: |
-              あああああああ
-          - summary: React
-            detail: |
-              あああああああ
-          - summary: Vue
-            detail: |
-              あああああああ
-          - summary: (Angular)
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルA
-      - level: SPAの設計/構築を行うことができる
-        todos:
-          - summary: API設計スキル
-            detail: |
-              あああああああ
-          - summary: HTTP
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルS
-      - level: 広範なライブラリやツールセットを扱うことができ、それらの選定を正しく行うことができる
-        todos:
-          - summary: 新旧問わず様々なライブラリの知識(新しいものであれば使用経験があるとよい)
-            detail: |
-              あああああああ
-          - summary: ライブラリがProduction readyかどうか見極める能力
-            detail: |
-              あああああああ
+  # アプリケーション力
+  # ------------------------------
+  # レベルD
+  - summary: Javascript(ES5~ES2017)
+    detail: |
+      あああああああ
+    skill: application
+    level: 1
+  - summary: npmエコシステムを使ったJSライブラリの使用
+    detail: |
+      あああああああ
+    skill: application
+    level: 1
+  # ------------------------------
+  # レベルC
+  - summary: fetch API
+    detail: |
+      あああああああ
+    skill: application
+    level: 2
+  - summary: REST(ful) APIの知識/使用
+    detail: |
+      あああああああ
+    skill: application
+    level: 2
+  - summary: localforage
+    detail: |
+      あああああああ
+    skill: application
+    level: 2
+  # ------------------------------
+  # レベルB
+  - summary: Typescript
+    detail: |
+      あああああああ
+    skill: application
+    level: 3
+  - summary: MVCやMVVM,FluxなどのGUIアプリケーションアーキテクチャの知識
+    detail: |
+      あああああああ
+    skill: application
+    level: 3
+  - summary: React
+    detail: |
+      あああああああ
+    skill: application
+    level: 3
+  - summary: Vue
+    detail: |
+      あああああああ
+    skill: application
+    level: 3
+  - summary: (Angular)
+    detail: |
+      あああああああ
+    skill: application
+    level: 3
+  # ------------------------------
+  # レベルA
+  - summary: API設計スキル
+    detail: |
+      あああああああ
+    skill: application
+    level: 4
+  - summary: HTTP
+    detail: |
+      あああああああ
+    skill: application
+    level: 4
+  # ------------------------------
+  # レベルS
+  - summary: 新旧問わず様々なライブラリの知識(新しいものであれば使用経験があるとよい)
+    detail: |
+      あああああああ
+    skill: application
+    level: 5
+  - summary: ライブラリがProduction readyかどうか見極める能力
+    detail: |
+      あああああああ
+    skill: application
+    level: 5
+
   # ==============================
   # セマンティックWeb力
-  - ability: semantic
-    levels:
-      # ------------------------------
-      # レベルD
-      - level: 標準化された正しいマークアップが行える
-        todos:
-          - summary: W3Cの仕様を読む習慣
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルC
-      - level: 様々なメタ情報を扱うことができる/適応することができる
-        todos:
-          - summary: FacebookやTwitter, Googleなどのサポートしている拡張メタタグ等の知識
-            detail: |
-              あああああああ
-          - summary: 各種メタ情報の有用性/必要性/プラットフォーム対応状況を知る
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルB
-      - level: アクセシビリティ系の対応をある程度行える
-        todos:
-          - summary: WAI-ARIAについての知識
-            detail: |
-              あああああああ
-          - summary: 読み上げブラウザ等の知識
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルA
-      - level: i18nやl10nの対応を行うことができる
-        todos:
-          - summary: i18n, l10n, m17nについての区別/認識
-            detail: |
-              あああああああ
-          - summary: 各種対応の実装手法
-            detail: |
-              あああああああ
-      # ------------------------------
-      # レベルS
-      - level: そのサイトに必要/適用可能なドキュメント最適化を判断/適用することができる
-        todos:
-          - summary: 対応した場合のコストパフォーマンスを計算できる能力
-            detail: |
-              あああああああ
-          - summary: そのプロジェクトにどんな対応をする必要があるか見極める能力
-            detail: |
-              あああああああ
+  # ------------------------------
+  # レベルD
+  - summary: W3Cの仕様を読む習慣
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 1
+  # ------------------------------
+  # レベルC
+  - summary: FacebookやTwitter, Googleなどのサポートしている拡張メタタグ等の知識
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 2
+  - summary: 各種メタ情報の有用性/必要性/プラットフォーム対応状況を知る
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 2
+  # ------------------------------
+  # レベルB
+  - summary: WAI-ARIAについての知識
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 3
+  - summary: 読み上げブラウザ等の知識
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 3
+  # ------------------------------
+  # レベルA
+  - summary: i18n, l10n, m17nについての区別/認識
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 4
+  - summary: 各種対応の実装手法
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 4
+  # ------------------------------
+  # レベルS
+  - summary: 対応した場合のコストパフォーマンスを計算できる能力
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 5
+  - summary: そのプロジェクトにどんな対応をする必要があるか見極める能力
+    detail: |
+      あああああああ
+    skill: semantic
+    level: 5
