@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import { BrowserRouter, Redirect, Route } from 'react-router-dom'
+import { Redirect, Route } from 'react-router'
+import { ConnectedRouter } from 'react-router-redux'
 
 import store from '~/store'
 
@@ -9,8 +10,10 @@ import SkillChart from '~/pages/SkillChart'
 import ToDo from '~/pages/ToDo'
 import $ToDoDetails from '~/pages/ToDoDetails'
 
-export const ConnectedRouter: React.SFC = () => (
-  <BrowserRouter>
+import { history } from './history'
+
+export const App: React.SFC = () => (
+  <ConnectedRouter history={history}>
     <div>
       <Route exact path="/" component={CheckList} />
       <Route exact path="/skill" component={PurposeSelectedGuard(SkillChart)} />
@@ -21,7 +24,7 @@ export const ConnectedRouter: React.SFC = () => (
         render={({ match }) => <ToDoDetails params={match.params} />}
       />
     </div>
-  </BrowserRouter>
+  </ConnectedRouter>
 )
 
 // やりたいことが指定されていない場合にやりたいことリストへリダイレクトする

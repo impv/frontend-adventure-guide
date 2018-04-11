@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components'
 
 import { theme } from '~/styles/theme'
 
-import { ConnectedRouter } from '~/router'
+import { App } from '~/router'
 import store from '~/store'
 
 import { purposes } from '~/config/purposes.yml'
@@ -23,7 +23,7 @@ store.dispatch(setSkillDetails({ details: skills }))
 render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
-      <ConnectedRouter />
+      <App />
     </Provider>
   </ThemeProvider>,
   document.getElementById('app')
