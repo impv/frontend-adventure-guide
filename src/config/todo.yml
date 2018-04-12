@@ -3,60 +3,60 @@ todos:
   # ビジュアル力
   # ------------------------------
   # レベルD
-  - summary: HTML, CSSの正しい標準を扱えるようになる
+  - summary: HTML, CSSの正しい書き方や標準について知る
     description: |
-      あああああああ
+      W3Cの仕様や、一般的なマークアップ/スタイリングのベストプラクティスについて知る。
     skill: visual
     level: 1
-  - summary: MDN, Can I Useを使うようにする
+  - summary: MDN, CanIUseを使えるようになる
     description: |
-      あああああああ
-    skill: visual
-    level: 1
-  - summary: W3Cが出している仕様を読めるようになる
-    description: |
-      あああああああ
+      何かわからないことがあった際にMDNで調べたり、ブラウザ対応状況を確認する際にCan I Useを参照できるようになる。
     skill: visual
     level: 1
   # ------------------------------
   # レベルC
   - summary: 一般的なデザインにおけるCSSの知識
     description: |
-      あああああああ
+      基本的なサイトを構築する際に必要なCSSプロパティや設計手法について知る。
     skill: visual
     level: 2
   - summary: CSSフレームワーク
     description: |
-      あああああああ
+      BEMやOOCSSの特徴やメリット/デメリットについて知る。
+      また、styled-componentsやJSSなどのCSS in JSについても知っているとSPA構築時に役立つ。
     skill: visual
     level: 2
   # ------------------------------
   # レベルB
   - summary: 広範なCSS,HTMLの知識
     description: |
-      あああああああ
+      HTML, CSSに関する深い知識を会得する。
+      また、各技術/要素の使いどころについて知る。
     skill: visual
     level: 3
   - summary: スタイルの構造化
     description: |
-      あああああああ
+      構造化されたCSS/スタイルを記述することをできるようになる。
     skill: visual
     level: 3
   # ------------------------------
   # レベルA
   - summary: グリッドデザイン(CSS Grid, フレームワーク/ライブラリ)
     description: |
-      あああああああ
+      CSS Grid等のグリッドデザインについて知り、使えるようになる。
+      また、グリッドデザインを実現するための各種ライブラリにどんなものがあるのかを知る。
+      それぞれ軽く使えるとできることの幅が広がる。
     skill: visual
     level: 4
   - summary: flexbox
     description: |
-      あああああああ
+      Flexboxを自在に扱えるようになる。
     skill: visual
     level: 4
   - summary: SVG
     description: |
-      あああああああ
+      SVGによるデザインや、CSSと組み合わせたアニメーションや装飾等を使いこなせるようになる。
+      また、SVGの使用が効果的な場面を見極められるようになる。
     skill: visual
     level: 4
   # ------------------------------
@@ -68,75 +68,78 @@ todos:
   # レベルD
   - summary: CSS transition/animationの基礎を学ぶ
     description: |
-      あああああああ
+      CSSのtransition/animationを使って簡単なインタラクション/アニメーションを実装できるようになる。
     skill: express
     level: 1
   # ------------------------------
   # レベルC
   - summary: CSS transition/animation
     description: |
-      あああああああ
+      CSSのtransition/animationを使いこなせるようになる。
     skill: express
     level: 2
   - summary: JSによるパフォーマンスを意識したインタラクションの実装
     description: |
-      あああああああ
+      JSを使い、CSS+HTMLだけではできない表現を行う。
+      また、CSSだけでできること、JSを使わないとできないことの判断をできるようになる。
     skill: express
     level: 2
   # ------------------------------
   # レベルB
   - summary: jQuery
     description: |
-      あああああああ
+      jQueryを正しく扱えるようになる。
+      jQueryに依存するのではなく、必要な場面でのみ効果的に扱えるようになる。
     skill: express
     level: 3
   - summary: Vue.jsの基本的な使用法
     description: |
-      あああああああ
+      Vue.jsを使ってインタラクティブな表現を行えるようになる。
     skill: express
     level: 3
   # ------------------------------
   # レベルA
   - summary: SVG
     description: |
-      あああああああ
+      SVGによる表現を行えるようになる。
+      また、JSやCSSと組み合わせて思い通りの表現を行えるようになる。
     skill: express
     level: 4
   - summary: Three.js
     description: |
-      あああああああ
+      WebGLを用いた3D描画ライブラリであるThree.jsを扱えるようになる。
+      また、想定クライアントに応じた実用可能な複雑度(ポリゴン数やテクスチャ)を調整できるようになる。
     skill: express
     level: 4
   - summary: Pixi.js
     description: |
-      あああああああ
+      WebGLを用いた2D描画ライブラリであるPixi.jsを扱えるようになる。
+      また、それを用いてSVGや素のCanvasでは難しい描画を行えるようになる。
     skill: express
     level: 4
   - summary: Canvas
     description: |
-      あああああああ
+      HTML5 Canvasを自在に扱えるようになる。
+      また、素のCanvasだけでなくラッパーライブラリについても知る。
     skill: express
     level: 4
   - summary: Snap.svg
     description: |
-      あああああああ
+      SVGアニメーションライブラリであるSnap.svgを扱えるようになる。
     skill: express
     level: 4
   - summary: particles.js
     description: |
-      あああああああ
+      パーティクル表示ライブラリであるparticles.jsを扱えるようになる。
+      また、その使用が効果的な場面を判断できるようになる。
     skill: express
     level: 4
   # ------------------------------
   # レベルS
   - summary: 幅広いライブラリや表現手法,実際のユースケースに関する知識
     description: |
-      あああああああ
-    skill: express
-    level: 5
-  - summary: 効果的なライブラリの使用
-    description: |
-      あああああああ
+      様々な表現系のライブラリや、Web技術について知る。
+      それらが実際にプロダクションユースに耐えられるか、どんな局面で使えば効果的なのかを判断できるようになる。
     skill: express
     level: 5
 
@@ -146,48 +149,54 @@ todos:
   # レベルD
   - summary: HTML/CSS/JSでできること、やるべきことを理解する
     description: |
-      あああああああ
+      HTML/CSS/JSでそれぞれ何ができるのか、どこまでを各レイヤーでやるべきなのかについて知る。
     skill: tech
     level: 1
   # ------------------------------
   # レベルC
   - summary: Canvas
     description: |
-      あああああああ
+      Canvasを自在に扱えるようになる。
     skill: tech
     level: 2
-  - summary: LocalStorage/IndexedDB/SessionStorage
+  - summary: LocalStorage/IndexedDB/SessionStorage/Cookie
     description: |
-      あああああああ
+      ブラウザ上にデータを保存する技術について知り、扱えるようにする。
+      また、フォールバック可能なラッパーであるlocalforageを扱えるようにする。
     skill: tech
     level: 2
   # ------------------------------
   # レベルB
   - summary: WebAssembly
     description: |
-      あああああああ
+      WebAssembly(wasm)について知る。
+      また、どんなケースで使うべきか、どんな利用法をすべきかについて知る。
     skill: tech
     level: 3
   - summary: WebWorker
     description: |
-      あああああああ
+      WebWorkerについて知る。
+      各Workerの役割について理解する。
+      また、頻出であるServiceWorkerによるキャッシュを実装できるようになる。
     skill: tech
     level: 3
   - summary: WebSpeech
     description: |
-      あああああああ
+      WebSpeechAPIについて知る。
     skill: tech
     level: 3
   - summary: asm.js
     description: |
-      あああああああ
+      asm.jsについて知る。
+      wasmとの違い、どのようなケースで使うべきかについて知る。
+      また、WebGLインテグレーションについても知る。
     skill: tech
     level: 3
   # ------------------------------
   # レベルA
-  - summary: ある技術がProduction readyかどうか見極める能力
+  - summary: Production readyかどうかの見極め
     description: |
-      あああああああ
+      周辺技術やライブラリ、特に新しいものについて実際のプロダクトに組み込めるか、組み込むべきかどうかを判断できるようになる。
     skill: tech
     level: 4
   # ------------------------------
@@ -199,80 +208,89 @@ todos:
   # レベルD
   - summary: Javascript(ES5~ES2017)
     description: |
-      あああああああ
+      JSを基礎から応用までしっかりと知る。
+      ReactやjQuery等のライブラリとは関係のないJSの文法や仕様、及びブラウザやNodeの基本的なAPIについて知る。
     skill: application
     level: 1
   - summary: npmエコシステムを使ったJSライブラリの使用
     description: |
-      あああああああ
+      npmを使いJS製のライブラリをインストールし利用できるようになる。
+      Webpackやparcel, rollup等を扱いバンドルを生成すること。
     skill: application
     level: 1
   # ------------------------------
   # レベルC
-  - summary: fetch API
+  - summary: Fetch API
     description: |
-      あああああああ
+      FetchAPIについて知り、扱えるようにする。
     skill: application
     level: 2
   - summary: REST(ful) APIの知識/使用
     description: |
-      あああああああ
+      RESTfulAPIについて知る。
+      また、FetchAPIやajaxを用いてそれを利用できるようにする。
     skill: application
     level: 2
   - summary: localforage
     description: |
-      あああああああ
+      localforageの動作及びストレージバックエンドについて知り、扱えるようにする。
     skill: application
     level: 2
   # ------------------------------
   # レベルB
   - summary: Typescript
     description: |
-      あああああああ
+      Typescriptを扱えるようになる。
+      既存のJSライブラリの型定義ファイルを書けるレベル。
     skill: application
     level: 3
-  - summary: MVCやMVVM,FluxなどのGUIアプリケーションアーキテクチャの知識
+  - summary: GUIアプリケーションアーキテクチャ
     description: |
-      あああああああ
+      MVC, MVVM, Fluxといったフロントエンドで使われるGUIを構成する上で必要なアプリケーションアーキテクチャについて知る。
+      また、それらのうち一つは扱えるようにする。
     skill: application
     level: 3
   - summary: React
     description: |
-      あああああああ
+      Reactを使い、SPAを構築できるようになる。
+      データ層はRedux, mobX等何でも良い。使わなくても良い。
     skill: application
     level: 3
   - summary: Vue
     description: |
-      あああああああ
+      Vue.jsを使い、SPAを構築できるようになる。
+      データ層は必要であればVuexを使って良いが、基本的には使わずに組めるようにする。
     skill: application
     level: 3
   - summary: (Angular)
     description: |
-      あああああああ
+      Angularを扱えるようにする。
+      幅広く活躍したい場合は習得したほうがいいが、他の勉強をしたほうが身になるため、余裕があればでよい。
     skill: application
     level: 3
   # ------------------------------
   # レベルA
   - summary: API設計スキル
     description: |
-      あああああああ
+      REST APIもしくはGraphQLを使ったAPIの仕様策定/設計を行えるようになる。
     skill: application
     level: 4
   - summary: HTTP
     description: |
-      あああああああ
+      HTTPについて知る。
     skill: application
     level: 4
   # ------------------------------
   # レベルS
-  - summary: 新旧問わず様々なライブラリの知識(新しいものであれば使用経験があるとよい)
+  - summary: ライブラリの知識
     description: |
-      あああああああ
+      新旧問わず様々なライブラリについて知る。
+      新しいものであれば使用経験があるとよい。
     skill: application
     level: 5
   - summary: ライブラリがProduction readyかどうか見極める能力
     description: |
-      あああああああ
+      ライブラリをプロダクトに組み込めるかどうか判断できるようにする。
     skill: application
     level: 5
 
@@ -280,56 +298,49 @@ todos:
   # セマンティックWeb力
   # ------------------------------
   # レベルD
-  - summary: W3Cの仕様を読む習慣
+  - summary: W3Cの仕様を読む
     description: |
-      あああああああ
+      W3Cの出しているHTMLの仕様を読む。または読めるようになる。
+      量が膨大なため全てを読む必要はない。
     skill: semantic
     level: 1
   # ------------------------------
   # レベルC
-  - summary: FacebookやTwitter, Googleなどのサポートしている拡張メタタグ等の知識
+  - summary: メタタグ
     description: |
-      あああああああ
-    skill: semantic
-    level: 2
-  - summary: 各種メタ情報の有用性/必要性/プラットフォーム対応状況を知る
-    description: |
-      あああああああ
+      FacebookやTwitter, Googleなどのサポートしているメタタグについて知る。
+      また、各種デバイスでサポートされているものについても知る。
     skill: semantic
     level: 2
   # ------------------------------
   # レベルB
   - summary: WAI-ARIAについての知識
     description: |
-      あああああああ
+      WAI-ARIAについて知り、どんな場面で使うべきか判断できるようにする。
+      また実際に使えるようにする。
     skill: semantic
     level: 3
-  - summary: 読み上げブラウザ等の知識
+  - summary: アクセシブルブラウザ等の知識
     description: |
-      あああああああ
+      読み上げブラウザ等のアクセシブルブラウザについて知る。
     skill: semantic
     level: 3
   # ------------------------------
   # レベルA
   - summary: i18n, l10n, m17nについての区別/認識
     description: |
-      あああああああ
-    skill: semantic
-    level: 4
-  - summary: 各種対応の実装手法
-    description: |
-      あああああああ
+      i18n, l10n, m17nがそれぞれ何をさしており、具体的にどう違うのかを説明できるようになる。
     skill: semantic
     level: 4
   # ------------------------------
   # レベルS
-  - summary: 対応した場合のコストパフォーマンスを計算できる能力
+  - summary: 対応コストパフォーマンス計算能力
     description: |
-      あああああああ
+      ドキュメントをセマンティックWebに沿ったものにした場合にどのくらいのコストがかかるのか、効果があるのか見積もれるようになる。
     skill: semantic
     level: 5
-  - summary: そのプロジェクトにどんな対応をする必要があるか見極める能力
+  - summary: 採用判断能力
     description: |
-      あああああああ
+      セマンティックWebをどの程度取り入れるかどうか、プロジェクトやメンバ等を考慮して判断できるようになる。
     skill: semantic
     level: 5
