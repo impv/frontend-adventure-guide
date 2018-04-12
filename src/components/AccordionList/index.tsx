@@ -43,6 +43,8 @@ export class AccordionList extends React.Component {
   }
 }
 
+export default AccordionList
+
 const Container = styled.div`
   > *:not(:first-child) {
     margin-top: 1em;
