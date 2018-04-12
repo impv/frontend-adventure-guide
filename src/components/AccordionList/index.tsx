@@ -14,12 +14,6 @@ export class AccordionList extends React.Component {
     selected: -1
   }
 
-  private onSelectItem(index: number) {
-    this.setState({
-      selected: index
-    })
-  }
-
   public render() {
     const { children } = this.props
     const { selected } = this.state
@@ -40,6 +34,12 @@ export class AccordionList extends React.Component {
         )}
       </Container>
     )
+  }
+
+  private onSelectItem(index: number) {
+    this.setState({
+      selected: index
+    })
   }
 }
 

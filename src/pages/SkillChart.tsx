@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-import LinkButton from '~/components/LinkButton'
 import BackButton from '~/components/BackButton'
+import LinkButton from '~/components/LinkButton'
 import Page from '~/components/Page'
 import PageFooter from '~/components/PageFooter'
 import PageHeader from '~/components/PageHeader'

@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-import AccordionList from '~/components/AccordionList'
 import AccordionItem from '~/components/AccordionItem'
+import AccordionList from '~/components/AccordionList'
 
 import ToDo from '~/types/ToDo'
 

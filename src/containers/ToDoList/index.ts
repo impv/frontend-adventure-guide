@@ -8,7 +8,7 @@ import { todos } from '~/config/todo.yml'
 
 type MapProps = Partial<ToDoListProps>
 
-type Props = {
+interface Props {
   skill: string
 }
 
