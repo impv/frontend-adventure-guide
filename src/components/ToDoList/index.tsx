@@ -16,7 +16,7 @@ export interface Props {
 export const ToDoList: React.SFC<Props> = ({ todos }) => (
   <AccordionList>
     {todos.map(todo => (
-      <AccordionItem title={todo.summary}>
+      <AccordionItem key={todo.summary} title={todo.summary}>
         <Description>{todo.description}</Description>
       </AccordionItem>
     ))}
