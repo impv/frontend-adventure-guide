@@ -2,7 +2,8 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-import Button from '~/components/Button'
+import BackButton from '~/components/BackButton'
+import LinkButton from '~/components/LinkButton'
 import Page from '~/components/Page'
 import PageFooter from '~/components/PageFooter'
 import PageHeader from '~/components/PageHeader'
@@ -18,12 +19,10 @@ const SkillChartPage: React.StatelessComponent = () => (
       <SkillChart />
     </ChartContainer>
     <PageFooter>
-      <Link to="/todo">
-        <Button type="primary">なにをすればいい?</Button>
-      </Link>
-      <Link to="/">
-        <Button type="outline">えらびなおす</Button>
-      </Link>
+      <LinkButton to="/todo" type="primary">
+        なにをすればいい?
+      </LinkButton>
+      <BackButton type="outline">えらびなおす</BackButton>
     </PageFooter>
   </Page>
 )

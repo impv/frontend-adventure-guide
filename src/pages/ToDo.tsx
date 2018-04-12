@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import styled from 'styled-components'
 
-import LinkButton from '~/components/LinkButton'
+import BackButton from '~/components/BackButton'
 import Page from '~/components/Page'
 import PageFooter from '~/components/PageFooter'
 import PageHeader from '~/components/PageHeader'
@@ -16,9 +16,7 @@ const ToDo: React.StatelessComponent = () => (
       <ToDoSkillList />
     </SkillListContainer>
     <PageFooter>
-      <LinkButton to="/" type="primary">
-        さいしょにもどる
-      </LinkButton>
+      <BackButton type="primary">もどる</BackButton>
     </PageFooter>
   </Page>
 )
