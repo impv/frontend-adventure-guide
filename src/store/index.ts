@@ -13,9 +13,9 @@ import { history } from '~/router/history'
 const middleware = routerMiddleware(history as any)
 
 const persistConfig: PersistConfig = {
-  storage,
+  blacklist: ['router'],
   key: 'root',
-  blacklist: ['router']
+  storage
 }
 
 export interface RootState {
