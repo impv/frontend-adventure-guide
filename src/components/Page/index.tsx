@@ -11,7 +11,7 @@ const Container = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 7em 0;
+  padding: 0;
 
   // appearance
   background-color: ${({ theme }: Themed) => theme.baseColor};
@@ -26,6 +26,7 @@ const Column = styled.div`
   position: relative;
   margin-left: 30%;
   width: 40%;
+  padding: 7em 0;
 
   @media (max-width: 800px) {
     width: 90%;
